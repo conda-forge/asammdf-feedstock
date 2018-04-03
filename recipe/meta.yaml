@@ -43,7 +43,7 @@ test:
 about:
   home: https://github.com/danielhrisca/asammdf
   license: LGPLv3+
-  license_family: LGPL3
+  license_family: LGPL
   license_file: LICENSE
   summary: 'ASAM MDF measurement data file parser'
   description: |
