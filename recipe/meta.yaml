@@ -1,8 +1,8 @@
 {% set name = "asammdf" %}
-{% set version = "3.2.1" %}
+{% set version = "3.3.0" %}
 {% set file_ext = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set sha256 = "ad9e5d89980d87d46a926acba1e1a1159cf0077229a753ef1f22a8645500e4be" %}
+{% set sha256 = "da3c9824e81b3962dad9c1c8f818198492c65f3a7791ebadb452be1cf7f6a1bd" %}
 
 package:
   name: {{ name|lower }}
@@ -31,6 +31,7 @@ requirements:
     - numexpr
     - matplotlib
     - wheel
+    - canmatrix
     
 test:
   # Some package might need a `test/commands` key to check CLI.
@@ -42,13 +43,12 @@ test:
 about:
   home: https://github.com/danielhrisca/asammdf
   license: LGPLv3+
-  license_family: GPL3
+  license_family: LGPL
   license_file: LICENSE
   summary: 'ASAM MDF measurement data file parser'
   description: |
-    *asammdf* is a fast parser/editor for ASAM (Associtation for Standardisation of Automation and Measuring Systems) MDF (Measurement Data Format) files. 
-    *asammdf* supports MDF versions 2 (.dat), 3 (.mdf) and 4 (.mf4). 
-    *asammdf* works on Python 2.7, and Python >= 3.4 (Travis CI tests done with Python 2.7 and Python >= 3.5).
+    *asammdf* is a fast parser/editor for ASAM (Associtation for Standardisation of Automation and Measuring Systems) MDF (Measurement Data Format) files. \n\n*asammdf* supports MDF versions\
+    \ 2 (.dat), 3 (.mdf) and 4 (.mf4). \n\n*asammdf* works on Python 2.7, and Python >= 3.4 (Travis CI tests done with Python 2.7 and Python >= 3.5)\
   doc_url: http://asammdf.readthedocs.io/en/master
   dev_url: https://github.com/danielhrisca/asammdf
 
