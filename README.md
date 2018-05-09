@@ -9,20 +9,22 @@ Feedstock license: BSD 3-Clause
 
 Summary: ASAM MDF measurement data file parser
 
-*asammdf* is a fast parser/editor for ASAM (Associtation for Standardisation of Automation and Measuring Systems) MDF (Measurement Data Format) files. 
-*asammdf* supports MDF versions 2 (.dat), 3 (.mdf) and 4 (.mf4). 
-*asammdf* works on Python 2.7, and Python >= 3.4 (Travis CI tests done with Python 2.7 and Python >= 3.5)
+*asammdf* is a fast parser/editor for ASAM (Associtation for Standardisation of Automation and Measuring Systems) MDF (Measurement Data Format) files. \n\n*asammdf* supports MDF versions\
+\ 2 (.dat), 3 (.mdf) and 4 (.mf4). \n\n*asammdf* works on Python 2.7, and Python >= 3.4 (Travis CI tests done with Python 2.7 and Python >= 3.5)\
 
 
 Current build status
 ====================
 
-All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/asammdf-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/asammdf-feedstock)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/asammdf-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/asammdf-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/asammdf/badges/version.svg)](https://anaconda.org/conda-forge/asammdf)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/asammdf/badges/downloads.svg)](https://anaconda.org/conda-forge/asammdf)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-asammdf-green.svg)](https://anaconda.org/conda-forge/asammdf) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/asammdf.svg)](https://anaconda.org/conda-forge/asammdf) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/asammdf.svg)](https://anaconda.org/conda-forge/asammdf) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/asammdf.svg)](https://anaconda.org/conda-forge/asammdf) |
 
 Installing asammdf
 ==================
