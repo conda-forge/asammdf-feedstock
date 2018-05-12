@@ -1,8 +1,8 @@
 {% set name = "asammdf" %}
-{% set version = "3.4.2" %}
+{% set version = "3.4.3" %}
 {% set file_ext = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set sha256 = "c8f5551243d37f11407a211d50a2ffc6796728a483d7e3ab81d9edd902e7ba57" %}
+{% set sha256 = "cfd20d926515f6eceb69cee686e4785e35b50372ad390ac00f56c63f50da25bd" %}
 
 package:
   name: {{ name|lower }}
