@@ -1,8 +1,8 @@
 {% set name = "asammdf" %}
-{% set version = "3.4.3" %}
+{% set version = "3.5.0" %}
 {% set file_ext = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set sha256 = "cfd20d926515f6eceb69cee686e4785e35b50372ad390ac00f56c63f50da25bd" %}
+{% set sha256 = "21ffa41413f561ea6d518b9cfefea6bd8f7707b8dca05b423cfa0e36c1e8402b" %}
 
 package:
   name: {{ name|lower }}
@@ -51,7 +51,7 @@ about:
   description: |
     *asammdf* is a fast parser/editor for ASAM (Associtation for Standardisation of Automation and Measuring Systems) MDF (Measurement Data Format) files. \n\n*asammdf* supports MDF versions\
     \ 2 (.dat), 3 (.mdf) and 4 (.mf4). \n\n*asammdf* works on Python 2.7, and Python >= 3.4 (Travis CI tests done with Python 2.7 and Python >= 3.5)\
-    GUI available that is based on pyqtgraph and PyQt5
+    GUI available that is based on pyqtgraph and PyQt5/PyQt4
   doc_url: http://asammdf.readthedocs.io/en/master
   dev_url: https://github.com/danielhrisca/asammdf
 
