@@ -9,20 +9,23 @@ Feedstock license: BSD 3-Clause
 
 Summary: ASAM MDF measurement data file parser
 
-*asammdf* is a fast parser/editor for ASAM (Associtation for Standardisation of Automation and Measuring Systems) MDF (Measurement Data Format) files. 
-*asammdf* supports MDF versions 2 (.dat), 3 (.mdf) and 4 (.mf4). 
-*asammdf* works on Python 2.7, and Python >= 3.4 (Travis CI tests done with Python 2.7 and Python >= 3.5)
+*asammdf* is a fast parser/editor for ASAM (Associtation for Standardisation of Automation and Measuring Systems) MDF (Measurement Data Format) files. \n\n*asammdf* supports MDF versions\
+\ 2 (.dat), 3 (.mdf) and 4 (.mf4). \n\n*asammdf* works on Python 2.7, and Python >= 3.4 (Travis CI tests done with Python 2.7 and Python >= 3.5)\
+GUI available that is based on pyqtgraph and PyQt5/PyQt4
 
 
 Current build status
 ====================
 
-All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/asammdf-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/asammdf-feedstock)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/asammdf-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/asammdf-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/asammdf/badges/version.svg)](https://anaconda.org/conda-forge/asammdf)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/asammdf/badges/downloads.svg)](https://anaconda.org/conda-forge/asammdf)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-asammdf-green.svg)](https://anaconda.org/conda-forge/asammdf) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/asammdf.svg)](https://anaconda.org/conda-forge/asammdf) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/asammdf.svg)](https://anaconda.org/conda-forge/asammdf) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/asammdf.svg)](https://anaconda.org/conda-forge/asammdf) |
 
 Installing asammdf
 ==================
@@ -57,13 +60,13 @@ for each of the installable packages. Such a repository is known as a *feedstock
 A feedstock is made up of a conda recipe (the instructions on what and how to build
 the package) and the necessary configurations for automatic building using freely
 available continuous integration services. Thanks to the awesome service provided by
-[CircleCI](https://circleci.com/), [AppVeyor](http://www.appveyor.com/)
+[CircleCI](https://circleci.com/), [AppVeyor](https://www.appveyor.com/)
 and [TravisCI](https://travis-ci.org/) it is possible to build and upload installable
 packages to the [conda-forge](https://anaconda.org/conda-forge)
-[Anaconda-Cloud](http://docs.anaconda.org/) channel for Linux, Windows and OSX respectively.
+[Anaconda-Cloud](https://anaconda.org/) channel for Linux, Windows and OSX respectively.
 
 To manage the continuous integration and simplify feedstock maintenance
-[conda-smithy](http://github.com/conda-forge/conda-smithy) has been developed.
+[conda-smithy](https://github.com/conda-forge/conda-smithy) has been developed.
 Using the ``conda-forge.yml`` within this repository, it is possible to re-render all of
 this feedstock's supporting files (e.g. the CI configuration files) with ``conda smithy rerender``.
 
@@ -99,7 +102,7 @@ build distinct package versions.
 
 In order to produce a uniquely identifiable distribution:
  * If the version of a package **is not** being increased, please add or increase
-   the [``build/number``](http://conda.pydata.org/docs/building/meta-yaml.html#build-number-and-string).
+   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string).
  * If the version of a package **is** being increased, please remember to return
-   the [``build/number``](http://conda.pydata.org/docs/building/meta-yaml.html#build-number-and-string)
+   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string)
    back to 0.
