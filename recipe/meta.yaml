@@ -22,13 +22,13 @@ build:
 
 requirements:
   build:
-    - python
+    - python >=3.6
     - pip
     - setuptools
     - wheel
   run:
-    - python
-    - numpy >=1.13.1
+    - python >=3.6
+    - numpy >=1.16.1
     - pandas
     - numexpr
     - matplotlib
