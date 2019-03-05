@@ -14,8 +14,8 @@ Feedstock license: BSD 3-Clause
 Summary: ASAM MDF measurement data file parser
 
 *asammdf* is a fast parser/editor for ASAM (Associtation for Standardisation of Automation and Measuring Systems) MDF (Measurement Data Format) files. \n\n*asammdf* supports MDF versions\
-\ 2 (.dat), 3 (.mdf) and 4 (.mf4). \n\n*asammdf* works on Python 2.7, and Python >= 3.4 (Travis CI tests done with Python 2.7 and Python >= 3.5)\
-GUI available that is based on pyqtgraph and PyQt5/PyQt4
+\ 2 (.dat), 3 (.mdf) and 4 (.mf4). \n\n*asammdf* works on Python >= 3.6 (for Python 2.7, 3.4 and 3.5 see the 4.x.y releases)\
+GUI available that is based on pyqtgraph and PyQt5
 
 
 Current build status
