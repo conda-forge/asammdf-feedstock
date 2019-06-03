@@ -34,6 +34,9 @@ requirements:
     - matplotlib
     - wheel
     - canmatrix
+    - cchardet
+    - lxml
+    - natsort
     
 test:
   # Some package might need a `test/commands` key to check CLI.
