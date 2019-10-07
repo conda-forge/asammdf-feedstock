@@ -1,8 +1,8 @@
 {% set name = "asammdf" %}
-{% set version = "5.11.0" %}
+{% set version = "5.12.0" %}
 {% set file_ext = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set sha256 = "c9ac25e80d61e8b4abb9c43b5212ad822186ba331b1cd10f80db91e270287fb1" %}
+{% set sha256 = "727a3d861587766ab9d411170d5a54569be0616b8d0d10d4bfd4fe9ec1ed77b8" %}
 
 package:
   name: {{ name|lower }}
@@ -16,7 +16,7 @@ source:
 build:
   number: 0
   noarch: python
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
     - asammdf = asammdf.gui.asammdfgui:main
 
