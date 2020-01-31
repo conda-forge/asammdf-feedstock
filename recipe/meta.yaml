@@ -37,6 +37,7 @@ requirements:
     - cchardet
     - lxml
     - natsort
+    - lz4
     
 test:
   # Some package might need a `test/commands` key to check CLI.
