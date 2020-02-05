@@ -1,8 +1,8 @@
 {% set name = "asammdf" %}
-{% set version = "5.16.3" %}
+{% set version = "5.16.5" %}
 {% set file_ext = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set sha256 = "26410ce67d75b4700f630fcfa24e7b3c9d7fb9dad3f12ddccc726b5c29e5e2d4" %}
+{% set sha256 = "7c0efc8ede04c94958bff3480c6b8ab8145a623bff71cc926fa681ac35c2059e" %}
 
 package:
   name: {{ name|lower }}
@@ -14,7 +14,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
