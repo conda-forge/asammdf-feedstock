@@ -1,8 +1,6 @@
 {% set name = "asammdf" %}
-{% set version = "5.18.0" %}
-{% set file_ext = "tar.gz" %}
-{% set hash_type = "sha256" %}
-{% set sha256 = "545e36dd67d1e1c72b1157562a5eeb32c750ab8d0de42e108ab714b67e5a1996" %}
+{% set version = "5.18.1" %}
+{% set sha256 = "e1c4b14405fb401f422bc95fc8a2c567b74665bd7e60a6fe5bab695e074a8595" %}
 
 package:
   name: {{ name|lower }}
@@ -38,7 +36,7 @@ requirements:
     - lxml
     - natsort
     - lz4
-    
+
 test:
   # Some package might need a `test/commands` key to check CLI.
   # List all the packages/modules that `run_test.py` imports. 
@@ -51,7 +49,7 @@ about:
   license: LGPLv3+
   license_family: LGPL
   license_file: LICENSE
-  summary: 'ASAM MDF measurement data file parser'
+  summary: ASAM MDF measurement data file parser
   description: |
     *asammdf* is a fast parser/editor for ASAM (Associtation for Standardisation of Automation and Measuring Systems) MDF (Measurement Data Format) files. \n\n*asammdf* supports MDF versions\
     \ 2 (.dat), 3 (.mdf) and 4 (.mf4). \n\n*asammdf* works on Python >= 3.6 (for Python 2.7, 3.4 and 3.5 see the 4.x.y releases)\
@@ -60,5 +58,5 @@ about:
   dev_url: https://github.com/danielhrisca/asammdf
 
 extra:
-  recipe-maintainers: 
+  recipe-maintainers:
     - danielhrisca
