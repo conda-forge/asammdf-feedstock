@@ -1,6 +1,6 @@
 {% set name = "asammdf" %}
-{% set version = "5.19.9" %}
-{% set sha256 = "5ed02f7e7ed23f8d30db64c108b21023f0e66da25811043c03828d64e76a9c89" %}
+{% set version = "5.19.11" %}
+{% set sha256 = "31fa40e98e7192cc7b6a5ab6eb4232275d54a209bd74b118bdd37fa92b7d76f8" %}
 
 package:
   name: {{ name|lower }}
