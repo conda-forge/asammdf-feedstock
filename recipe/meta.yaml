@@ -1,6 +1,6 @@
 {% set name = "asammdf" %}
-{% set version = "5.19.16" %}
-{% set sha256 = "b895177babb3fdcb236154a6f62b31549ff6662ef17cf2ff07adf40c8c4eb677" %}
+{% set version = "5.20.0" %}
+{% set sha256 = "a093fb547df54896de3447fc81fbca290c870c805f7ddbda9d31ce7f22d66dce" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
