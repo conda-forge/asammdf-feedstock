@@ -32,7 +32,7 @@ requirements:
     - matplotlib
     - wheel
     - canmatrix
-    - cchardet==2.1.5
+    - cchardet ==2.1.5
     - lxml
     - natsort
     - lz4
