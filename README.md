@@ -5,7 +5,7 @@ Home: https://github.com/danielhrisca/asammdf
 
 Package license: LGPLv3+
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: ASAM MDF measurement data file parser
 
