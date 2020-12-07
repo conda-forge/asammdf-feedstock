@@ -1,6 +1,6 @@
 {% set name = "asammdf" %}
-{% set version = "5.23.1" %}
-{% set sha256 = "7cd9c6fd11403c7c14399d822f2492f40a8ad8e1a16dd12e6ae4fe6219ab03b6" %}
+{% set version = "6.0.0" %}
+{% set sha256 = "576162ef5b41906e1bc782744e25a690bd9513560cb22c5a9d1af16cacf106ca" %}
 
 package:
   name: {{ name|lower }}
@@ -19,7 +19,7 @@ build:
     - asammdf = asammdf.gui.asammdfgui:main
 
 requirements:
-  build:
+  host:
     - python >=3.6
     - pip
     - setuptools
