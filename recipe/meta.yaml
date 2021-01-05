@@ -19,13 +19,14 @@ build:
     - asammdf = asammdf.gui.asammdfgui:main
 
 requirements:
+  build:
+    - {{ compiler('c') }}
   host:
     - python >=3.6
     - pip
     - setuptools
     - wheel
     - numpy >=1.16.1
-    - gcc
   run:
     - python >=3.6
     - numpy >=1.16.1
