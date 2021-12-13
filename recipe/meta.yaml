@@ -39,6 +39,8 @@ requirements:
     - lxml
     - natsort
     - lz4
+    - typing_extensions
+    - isal
 
 test:
   # Some package might need a `test/commands` key to check CLI.
