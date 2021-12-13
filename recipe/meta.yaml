@@ -40,7 +40,7 @@ requirements:
     - natsort
     - lz4
     - typing_extensions
-    - isal
+    - python-isal
 
 test:
   # Some package might need a `test/commands` key to check CLI.
