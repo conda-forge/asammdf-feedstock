@@ -49,6 +49,8 @@ test:
     - pytest
     - setuptools
     - {{ compiler('c') }}
+  imports:
+    - asammdf
 
 
 about:
