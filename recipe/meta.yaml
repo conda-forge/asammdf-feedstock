@@ -12,7 +12,8 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
+  noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
     - asammdf = asammdf.gui.asammdfgui:main
@@ -44,6 +45,10 @@ requirements:
 test:
   # Some package might need a `test/commands` key to check CLI.
   # List all the packages/modules that `run_test.py` imports. 
+  requires:
+    - pytest
+    - setuptools
+    - {{ compiler('c') }}
   imports:
     - asammdf
 
