@@ -26,7 +26,7 @@ requirements:
     - pip
     - setuptools
     - wheel
-    - numpy >=1.16.1
+    - numpy >=1.21
   run:
     - python >=3.7
     - numpy >=1.21
@@ -40,7 +40,7 @@ requirements:
     - natsort
     - lz4
     - typing_extensions
-    - isal
+    - python-isal
 
 test:
   # Some package might need a `test/commands` key to check CLI.
