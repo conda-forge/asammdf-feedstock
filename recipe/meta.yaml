@@ -32,7 +32,7 @@ requirements:
     - numpy >=1.21
     - pandas
     - numexpr
-    - matplotlib
+    - matplotlib-base
     - wheel
     - canmatrix
     - cchardet ==2.1.5
@@ -49,8 +49,6 @@ test:
     - pytest
     - setuptools
     - {{ compiler('c') }}
-  imports:
-    - asammdf
 
 
 about:
