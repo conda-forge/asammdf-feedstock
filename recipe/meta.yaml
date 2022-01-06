@@ -12,23 +12,20 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
-  noarch: python
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
-  entry_points:
-    - asammdf = asammdf.gui.asammdfgui:main
 
 requirements:
   build:
     - {{ compiler('c') }}
   host:
-    - python >=3.7
+    - python
     - pip
     - setuptools
     - wheel
     - numpy >=1.21
   run:
-    - python >=3.7
+    - python
     - numpy >=1.21
     - pandas
     - numexpr
