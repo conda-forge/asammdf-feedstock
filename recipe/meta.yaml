@@ -1,6 +1,6 @@
 {% set name = "asammdf" %}
-{% set version = "7.0.2" %}
-{% set sha256 = "08f38dc66f7259aa12fc086f6a326111cc0217422b3c7b74ed3ca93d6478ac61" %}
+{% set version = "7.0.3" %}
+{% set sha256 = "45c6b3d56ecaeffefe726c49b4a8d971354ae1d4a449033f7b6d4f4e3c32f9dc" %}
 
 package:
   name: {{ name|lower }}
@@ -32,10 +32,10 @@ requirements:
     - numpy >=1.21
     - pandas
     - numexpr
-    - matplotlib
+    - matplotlib-base
     - wheel
     - canmatrix
-    - cchardet ==2.1.5
+    - chardet
     - lxml
     - natsort
     - lz4
