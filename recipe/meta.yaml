@@ -1,6 +1,6 @@
 {% set name = "asammdf" %}
-{% set version = "7.0.3" %}
-{% set sha256 = "45c6b3d56ecaeffefe726c49b4a8d971354ae1d4a449033f7b6d4f4e3c32f9dc" %}
+{% set version = "7.0.4" %}
+{% set sha256 = "f60a50220abc5818059dc6aff4efaa18a5bfab88e1c4d1c2c1be8e0b3229f490" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 2
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
