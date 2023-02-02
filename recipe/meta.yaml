@@ -31,7 +31,7 @@ requirements:
     - numexpr
     - matplotlib-base
     - wheel
-    - canmatrix[arxml,dbc]>=0.8
+    - canmatrix[arxml,dbc] >=0.8
     - cchardet
     - chardet
     - lxml
@@ -54,7 +54,7 @@ test:
 
 about:
   home: https://github.com/danielhrisca/asammdf
-  license: LGPLv3+
+  license: LGPL-3.0
   license_family: LGPL
   license_file: LICENSE
   summary: ASAM MDF measurement data file parser
