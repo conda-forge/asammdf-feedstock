@@ -23,21 +23,23 @@ requirements:
     - pip
     - setuptools
     - wheel
-    - numpy >=1.21
+    - numpy >=1.23
   run:
     - python
-    - numpy >=1.21
+    - numpy >=1.23
     - pandas
     - numexpr
     - matplotlib-base
     - wheel
-    - canmatrix
+    - canmatrix[arxml,dbc]>=0.8
+    - cchardet
     - chardet
     - lxml
     - natsort
     - lz4
     - typing_extensions
-    - python-isal
+    - python-isal; platform_machine == "x86_64" or platform_machine == "AMD64"
+    - python-dateutil
 
 test:
   # Some package might need a `test/commands` key to check CLI.
