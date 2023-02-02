@@ -38,7 +38,7 @@ requirements:
     - natsort
     - lz4
     - typing_extensions
-    - python-isal; platform_machine == "x86_64" or platform_machine == "AMD64"
+    - python-isal
     - python-dateutil
 
 test:
