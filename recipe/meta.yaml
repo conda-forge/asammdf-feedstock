@@ -1,6 +1,6 @@
 {% set name = "asammdf" %}
-{% set version = "7.1.0" %}
-{% set sha256 = "a0a96f778027648f03d07d455dac076b5c45acae8bfa812e175c2596e9bdb23e" %}
+{% set version = "7.3.0" %}
+{% set sha256 = "e9ccfd4224b206986742416e10fa0c05151d8cb56f64db66403a34ab01426521" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 2
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
@@ -23,21 +23,23 @@ requirements:
     - pip
     - setuptools
     - wheel
-    - numpy >=1.21
+    - numpy >=1.23
   run:
     - python
-    - numpy >=1.21
+    - numpy >=1.23
     - pandas
     - numexpr
     - matplotlib-base
     - wheel
-    - canmatrix
+    - canmatrix[arxml,dbc] >=0.8
+    - cchardet
     - chardet
     - lxml
     - natsort
     - lz4
     - typing_extensions
     - python-isal
+    - python-dateutil
 
 test:
   # Some package might need a `test/commands` key to check CLI.
@@ -52,14 +54,14 @@ test:
 
 about:
   home: https://github.com/danielhrisca/asammdf
-  license: LGPLv3+
+  license: LGPL-3.0-only
   license_family: LGPL
   license_file: LICENSE
   summary: ASAM MDF measurement data file parser
   description: |
     *asammdf* is a fast parser/editor for ASAM (Associtation for Standardisation of Automation and Measuring Systems) MDF (Measurement Data Format) files. \n\n*asammdf* supports MDF versions\
-    \ 2 (.dat), 3 (.mdf) and 4 (.mf4). \n\n*asammdf* works on Python >= 3.7\
-    GUI available that is based on pyqtgraph and PyQt5
+    \ 2 (.dat), 3 (.mdf) and 4 (.mf4). \n\n*asammdf* works on Python >= 3.8\
+    GUI available that is based on pyqtgraph and PySide6
   doc_url: http://asammdf.readthedocs.io/en/master
   dev_url: https://github.com/danielhrisca/asammdf
 
