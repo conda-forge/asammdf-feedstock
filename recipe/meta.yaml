@@ -31,7 +31,7 @@ requirements:
     - numexpr
     - matplotlib-base
     - wheel
-    - canmatrix[arxml,dbc] >=0.8
+    - canmatrix[arxml,dbc] >=0.9.5
     - cchardet
     - chardet
     - lxml
