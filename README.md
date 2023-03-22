@@ -1,11 +1,11 @@
-About asammdf
-=============
+About asammdf-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/asammdf-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/danielhrisca/asammdf
 
 Package license: LGPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/asammdf-feedstock/blob/main/LICENSE.txt)
 
 Summary: ASAM MDF measurement data file parser
 
