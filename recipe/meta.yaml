@@ -18,7 +18,8 @@ build:
 requirements:
   build:
     - scikit-build-core
-    - {{ compiler('c') }}
+    - {{ compiler("c") }}
+    - {{ stdlib("c") }
   host:
     - python >= 3.10
     - pip
