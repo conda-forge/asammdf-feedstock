@@ -19,23 +19,23 @@ requirements:
   build:
     - scikit-build-core
     - {{ compiler("c") }}
-    - {{ stdlib("c") }
+    - {{ stdlib("c") }}
   host:
-    - python >= 3.10
+    - python >=3.10
     - pip
     - setuptools
     - wheel
-    - numpy >= 2.0
+    - numpy >=2.0
     - python-build
   run:
-    - python >= 3.10
-    - numpy >= 2.0
+    - python >=3.10
+    - numpy >=2.0
     - pandas
     - numexpr
     - matplotlib-base
     - wheel
-    - canmatrix >= 1.2
-    - chardet >= 7.0.0
+    - canmatrix >=1.2
+    - chardet >=7.0.0
     - lxml
     - natsort
     - lz4
