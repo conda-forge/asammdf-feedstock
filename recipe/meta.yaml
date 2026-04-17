@@ -1,6 +1,6 @@
 {% set name = "asammdf" %}
-{% set version = "7.3.13" %}
-{% set sha256 = "5dff4d8660d432762dca422460d48ae3d3e5b3c90247265163c62901edac0e8b" %}
+{% set version = "8.8.6" %}
+{% set sha256 = "5ebe19ec7083ea80a7e470b7203a7e478540e3165c7e6ee9c2cfd9f819b0db27" %}
 
 package:
   name: {{ name|lower }}
@@ -8,11 +8,11 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
